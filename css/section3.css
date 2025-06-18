@@ -1,0 +1,153 @@
+.section3 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 .content {
+    /* position: relative; */
+    width: 85%;
+
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section3 .content .header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section3 .content .header:after {
+
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: grey;
+
+}
+
+
+
+
+
+.section3 .content .header ul {
+    display: flex;
+    gap: 35px;
+}
+
+.section3 .content .header ul li {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.section3 .content .header ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.section3 .content .header ul li .target {
+    color: red;
+}
+
+.section3 .content .header ul li .target::after {
+    content: "";
+    position: absolute;
+    top: 240%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+
+
+.section3 .content .cards {
+    padding-top: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section3 .content .cards>div {
+    position: relative;
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3 .content .cards div img:nth-child(2) {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: 0.5s all;
+}
+
+.section3 .content .cards div:hover img:nth-child(2) {
+    transform: rotateY(0deg);
+}
+
+.section3 .content .cards div:hover h2{
+    color: red;
+}
+
+.section3 .content .cards div:hover .cart {
+    opacity: 1;
+    transform: translateY(-5px);
+
+
+}
+
+.section3 .content .cards div h2 {
+    margin: 10px 0;
+    transition: all 0.5s;
+}
+
+.section3 .content .cards div p {}
+
+.section3 .content .cards div p span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.section3 .content .cards img {
+    width: 100%;
+    height: 450px;
+}
+
+.section3 .content .cards .cart {
+    position: absolute;
+    top: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(20px);
+    transition: 1s all;
+    opacity: 0;
+    background-color: white;
+}
+
+
+.section3 .content .cards .cart div {
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 10px;
+        transition: 1s all;
+
+}
+
+.section3 .content .cards .cart div:hover {
+    background-color: red;
+    color: white;
+}

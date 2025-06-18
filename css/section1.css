@@ -1,0 +1,77 @@
+.section1 {
+   width: 100%;
+   min-height: 100vh;
+   background-color: rgb(225, 238, 250);
+}
+
+.section1 .content {
+    margin: auto;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.section1 .content div:nth-child(1) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section1 .content div:nth-child(1) h2 {
+   color: black;
+}
+.section1 .content div:nth-child(1) h3 {
+    font-family: "Kapakana", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    color: red;
+}
+
+.section1 .content div:nth-child(1) h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 25px 0 0 0;
+}
+
+.section1 .content div:nth-child(1) p {
+    width: 50%;
+    text-align: center;
+    margin: 25px 0;
+    color: grey;
+}
+
+.section1 .content div:nth-child(1) button {
+    width: 25%;
+    height: 50px;
+    color: white;
+    font-size: 1.4em;
+    background-color: black;
+    border: 1px solid black;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.section1 .content div:nth-child(1) button:hover {
+    color: black;
+    background-color: white;
+}
+.section1 .content div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .content div:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(-50px -150px 10px rgba(0, 0, 0, 0.3));
+}

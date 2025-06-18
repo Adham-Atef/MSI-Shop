@@ -1,0 +1,147 @@
+.section5 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.section5 .content {
+    /* position: relative; */
+    width: 85%;
+
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section5 .content .header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.section5 .content .header ul {
+    display: flex;
+    gap: 35px;
+}
+
+.section5 .content .header ul li {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.section5 .content .header ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.section5 .content .header ul li .target {
+    color: red;
+}
+
+.section5 .content .header ul li .target::after {
+    content: "";
+    position: absolute;
+    top: 240%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+
+
+.section5 .content .cards {
+    padding-top: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section5 .content .cards>div {
+    position: relative;
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section5 .content .cards div img:nth-child(2) {
+    position: absolute;
+    transform: translateY(-100%);
+    transition: 0.5s all ease-in-out; 
+        opacity: 0;
+
+}
+
+.section5 .content .cards div:hover img:nth-child(2) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.section5 .content .cards div:hover h2{
+    color: red;
+}
+
+.section5 .content .cards div:hover .cart {
+    opacity: 1;
+    transform: translateY(-5px);
+
+
+}
+
+.section5 .content .cards div h2 {
+    margin: 10px 0;
+    transition: all 0.5s;
+}
+
+.section5 .content .cards div p {}
+
+.section5 .content .cards div p span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.section5 .content .cards img {
+    width: 100%;
+    height: 450px;
+}
+
+.section5 .content .cards .cart {
+    position: absolute;
+    top: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(20px);
+    transition: 1s all;
+    opacity: 0;
+    background-color: white;
+}
+
+
+.section5 .content .cards .cart div {
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 10px;
+        transition: 1s all;
+
+}
+
+.section5 .content .cards .cart div:hover {
+    background-color: red;
+    color: white;
+}

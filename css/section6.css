@@ -1,0 +1,62 @@
+.section6 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+.section6 .content {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section6 .content div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section6 .content div h3 {
+    font-size: 1.1em;
+    color: grey;
+}
+
+.section6 .content div h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.section6 .content div p {
+    font-size: 1.2em;
+    color: grey;
+}
+
+.section6 .content div a {
+    font-size: 1.5em;
+    width: fit-content;
+    transition: 0.2s all;
+}
+
+.section6 .content div a:hover {
+    transform: scale(1.1);
+}
+
+.section6 .content div img {
+    width: 100%;
+    transition: 0.3s all;
+}
+
+.section6 .content div:hover h2 {
+    color: red;
+}
+
+.section6 .content div img:hover {
+    transform: scale(1.05);
+}
